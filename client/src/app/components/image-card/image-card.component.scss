@@ -1,0 +1,40 @@
+.img-card {
+    margin: 2rem auto;
+    padding: 1rem;
+    min-width: 300px;
+    max-width: 90%;
+    border-radius: 5px;
+    background-color: black;
+    display: flex;
+}
+
+@media (max-width: 967px) {
+  .img-card {
+    flex-direction: column;
+  }
+}
+
+.img-card img {
+    max-width: 100%;
+    width: 800px;
+    transition-duration: 500ms;
+}
+
+.poem {
+	padding: 1rem;
+	font-size: 2rem;
+	font-family: monospace;
+	color: white;
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.tag-container {
+    transition-duration: 500ms;
+}
+
+img:hover {
+    transform: scale(1.05, 1.05);
+}

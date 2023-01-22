@@ -1,0 +1,7 @@
+<div class="container">
+  <ng-container *ngIf="images">
+    <ng-container *ngFor="let image of images">
+      <app-image-card [image]="image"></app-image-card>
+    </ng-container>
+  </ng-container>
+</div>

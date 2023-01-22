@@ -1,0 +1,27 @@
+.tag-container {
+    display: flex;
+    position: absolute;
+}
+
+.tag {
+    background-color: lightgray;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.tag.jasmine {
+    background-color: darkgreen;
+    color: white;
+}
+
+.tag.goofy {
+    background-color: darkorchid;
+    color: white;
+}
+
+.tag.cute {
+    background-color: cornflowerblue;
+    color: white;
+}

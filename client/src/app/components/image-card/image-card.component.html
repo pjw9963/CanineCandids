@@ -1,0 +1,20 @@
+<div class="img-card">
+  <ng-container *ngIf="image">
+    <app-tag-container
+      class="tag-container"
+      [ngClass]="{ invisible: focused }"
+      [tags]="image.tags"
+    ></app-tag-container>
+    <img
+      (mouseleave)="unHover()"
+      (mouseenter)="onHover()"
+      [src]="image.url"
+      alt="{{ image.title }}"
+    />
+    <div class="poem">
+      <p *ngFor="let p of image.poem">
+        {{ p }}
+      </p>
+    </div>
+  </ng-container>
+</div>
